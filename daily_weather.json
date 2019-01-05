@@ -1,0 +1,506 @@
+Calling with:  { url:
+   'https://open.mapquestapi.com/geocoding/v1/address?key=cb1clVSHlhbNA6ADF8psJxA7uguRPl7s&location=Maspeth%20NY%2011378',
+  json: true }
+Response status: 200
+Jawol, we got a result:  { providedAddress: 'Maspeth NY 11378',
+  address:
+   { address: 'Maspeth NY 11378',
+     street: '',
+     postalCode: '11377',
+     Country: 'US',
+     State: 'NY',
+     County: 'Queens County',
+     City: 'New York City',
+     Neighborhood: '' },
+  latitude: 40.723158,
+  longitude: -73.912637 }
+Calling with:  { url:
+   'https://api.darksky.net/forecast/ed46ba474c621c9bb8098476390061a8/40.723158,-73.912637',
+  json: true }
+Response status: 200
+Summary: Mostly cloudy starting this evening.
+Icon: partly-cloudy-night
+      ------
+Date: Saturday Dec 29th at 12 PM
+Partly Cloudy
+Its 49.02f and feels like 44.37f
+Humidity: 0.55
+Windspeed: 11.42
+Windgust: 15.26
+Windbearing: 315
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 1 PM
+Clear
+Its 48.7f and feels like 43.69f
+Humidity: 0.56
+Windspeed: 12.34
+Windgust: 18.79
+Windbearing: 312
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 2 PM
+Clear
+Its 47.85f and feels like 42.47f
+Humidity: 0.57
+Windspeed: 12.84
+Windgust: 23.04
+Windbearing: 306
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 3 PM
+Clear
+Its 47.11f and feels like 41.55f
+Probability of rain is 0.02 with intensity of 0.0012
+Humidity: 0.57
+Windspeed: 12.79
+Windgust: 24.55
+Windbearing: 304
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 4 PM
+Clear
+Its 46.38f and feels like 40.87f
+Probability of rain is 0.01 with intensity of 0.0015
+Humidity: 0.57
+Windspeed: 12
+Windgust: 23.65
+Windbearing: 305
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 5 PM
+Clear
+Its 45.19f and feels like 39.84f
+Humidity: 0.58
+Windspeed: 10.63
+Windgust: 22.59
+Windbearing: 307
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 6 PM
+Clear
+Its 43.64f and feels like 38.47f
+Probability of rain is 0.01 with intensity of 0.0021
+Humidity: 0.61
+Windspeed: 9.22
+Windgust: 20.84
+Windbearing: 309
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 7 PM
+Clear
+Its 41.89f and feels like 36.74f
+Probability of rain is 0.01 with intensity of 0.001
+Humidity: 0.65
+Windspeed: 8.3
+Windgust: 20.41
+Windbearing: 312
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 8 PM
+Clear
+Its 40.33f and feels like 34.91f
+Probability of rain is 0.01 with intensity of 0.0018
+Humidity: 0.66
+Windspeed: 8.15
+Windgust: 19.68
+Windbearing: 315
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 9 PM
+Partly Cloudy
+Its 39.04f and feels like 33.37f
+Humidity: 0.67
+Windspeed: 8.09
+Windgust: 18.49
+Windbearing: 316
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 10 PM
+Partly Cloudy
+Its 37.86f and feels like 32.07f
+Humidity: 0.67
+Windspeed: 7.85
+Windgust: 16.65
+Windbearing: 318
+Visibility: 10
+      ------
+Date: Saturday Dec 29th at 11 PM
+Partly Cloudy
+Its 37.04f and feels like 31.36f
+Probability of rain is 0.01 with intensity of 0.0011
+Humidity: 0.67
+Windspeed: 7.34
+Windgust: 14.48
+Windbearing: 320
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 12 AM
+Partly Cloudy
+Its 36.01f and feels like 30.57f
+Probability of rain is 0.01 with intensity of 0.0011
+Humidity: 0.68
+Windspeed: 6.63
+Windgust: 12.29
+Windbearing: 323
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 1 AM
+Partly Cloudy
+Its 35.16f and feels like 30.02f
+Probability of snow is 0.01 with intensity of 0.0012
+Humidity: 0.68
+Windspeed: 5.96
+Windgust: 10.14
+Windbearing: 327
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 2 AM
+Mostly Cloudy
+Its 35.04f and feels like 29.98f
+Humidity: 0.65
+Windspeed: 5.83
+Windgust: 10.19
+Windbearing: 338
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 3 AM
+Mostly Cloudy
+Its 34.77f and feels like 29.98f
+Humidity: 0.64
+Windspeed: 5.41
+Windgust: 9.81
+Windbearing: 339
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 4 AM
+Mostly Cloudy
+Its 34.42f and feels like 30.04f
+Probability of snow is 0.01 with intensity of 0.0002
+Humidity: 0.64
+Windspeed: 4.87
+Windgust: 9.17
+Windbearing: 342
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 5 AM
+Mostly Cloudy
+Its 33.89f and feels like 30.35f
+Humidity: 0.65
+Windspeed: 3.92
+Windgust: 7.74
+Windbearing: 344
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 6 AM
+Mostly Cloudy
+Its 33.52f and feels like 33.52f
+Humidity: 0.65
+Windspeed: 2.96
+Windgust: 6.06
+Windbearing: 313
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 7 AM
+Mostly Cloudy
+Its 33.46f and feels like 33.46f
+Humidity: 0.65
+Windspeed: 2.27
+Windgust: 4.91
+Windbearing: 326
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 8 AM
+Mostly Cloudy
+Its 33.95f and feels like 33.95f
+Humidity: 0.64
+Windspeed: 2.05
+Windgust: 4.75
+Windbearing: 28
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 9 AM
+Mostly Cloudy
+Its 34.74f and feels like 34.74f
+Humidity: 0.64
+Windspeed: 2.21
+Windgust: 5.11
+Windbearing: 137
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 10 AM
+Overcast
+Its 35.94f and feels like 35.94f
+Humidity: 0.63
+Windspeed: 2.43
+Windgust: 5.81
+Windbearing: 214
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 11 AM
+Mostly Cloudy
+Its 37.76f and feels like 35.39f
+Humidity: 0.61
+Windspeed: 3.38
+Windgust: 7
+Windbearing: 231
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 12 PM
+Partly Cloudy
+Its 39.99f and feels like 36.93f
+Humidity: 0.59
+Windspeed: 4.42
+Windgust: 8.35
+Windbearing: 226
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 1 PM
+Partly Cloudy
+Its 41.62f and feels like 38.31f
+Humidity: 0.57
+Windspeed: 5.09
+Windgust: 9.34
+Windbearing: 229
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 2 PM
+Partly Cloudy
+Its 42.36f and feels like 39.02f
+Humidity: 0.57
+Windspeed: 5.32
+Windgust: 9.81
+Windbearing: 232
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 3 PM
+Clear
+Its 42.74f and feels like 39.42f
+Humidity: 0.58
+Windspeed: 5.39
+Windgust: 10.07
+Windbearing: 231
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 4 PM
+Clear
+Its 42.67f and feels like 39.34f
+Humidity: 0.6
+Windspeed: 5.38
+Windgust: 10.29
+Windbearing: 228
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 5 PM
+Clear
+Its 42.12f and feels like 38.79f
+Humidity: 0.62
+Windspeed: 5.24
+Windgust: 10.78
+Windbearing: 221
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 6 PM
+Partly Cloudy
+Its 41.03f and feels like 37.71f
+Humidity: 0.66
+Windspeed: 4.97
+Windgust: 11.25
+Windbearing: 215
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 7 PM
+Partly Cloudy
+Its 40.11f and feels like 36.86f
+Humidity: 0.69
+Windspeed: 4.68
+Windgust: 11.06
+Windbearing: 210
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 8 PM
+Partly Cloudy
+Its 39.45f and feels like 36.24f
+Probability of rain is 0.02 with intensity of 0.0002
+Humidity: 0.72
+Windspeed: 4.5
+Windgust: 9.47
+Windbearing: 209
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 9 PM
+Partly Cloudy
+Its 38.96f and feels like 36f
+Probability of rain is 0.02 with intensity of 0.0003
+Humidity: 0.73
+Windspeed: 4.13
+Windgust: 7.2
+Windbearing: 217
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 10 PM
+Partly Cloudy
+Its 38.55f and feels like 35.65f
+Probability of rain is 0.02 with intensity of 0.0003
+Humidity: 0.74
+Windspeed: 3.99
+Windgust: 5.75
+Windbearing: 222
+Visibility: 10
+      ------
+Date: Sunday Dec 30th at 11 PM
+Partly Cloudy
+Its 38.48f and feels like 35.38f
+Probability of rain is 0.02 with intensity of 0.0002
+Humidity: 0.75
+Windspeed: 4.19
+Windgust: 6.08
+Windbearing: 222
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 12 AM
+Clear
+Its 38.16f and feels like 34.64f
+Humidity: 0.77
+Windspeed: 4.6
+Windgust: 7.29
+Windbearing: 214
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 1 AM
+Partly Cloudy
+Its 37.63f and feels like 33.82f
+Humidity: 0.79
+Windspeed: 4.84
+Windgust: 8.14
+Windbearing: 216
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 2 AM
+Partly Cloudy
+Its 37.13f and feels like 33.43f
+Humidity: 0.81
+Windspeed: 4.61
+Windgust: 8.08
+Windbearing: 219
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 3 AM
+Partly Cloudy
+Its 36.62f and feels like 33.24f
+Humidity: 0.83
+Windspeed: 4.17
+Windgust: 7.61
+Windbearing: 223
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 4 AM
+Mostly Cloudy
+Its 35.91f and feels like 32.79f
+Probability of rain is 0.01 with intensity of 0.0003
+Humidity: 0.85
+Windspeed: 3.81
+Windgust: 7.02
+Windbearing: 224
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 5 AM
+Mostly Cloudy
+Its 35.15f and feels like 32.16f
+Probability of snow is 0.02 with intensity of 0.0004
+Humidity: 0.88
+Windspeed: 3.59
+Windgust: 6.1
+Windbearing: 220
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 6 AM
+Mostly Cloudy
+Its 34.43f and feels like 31.53f
+Probability of snow is 0.02 with intensity of 0.0005
+Humidity: 0.9
+Windspeed: 3.43
+Windgust: 5.02
+Windbearing: 213
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 7 AM
+Partly Cloudy
+Its 34.55f and feels like 31.76f
+Probability of snow is 0.02 with intensity of 0.0007
+Humidity: 0.9
+Windspeed: 3.34
+Windgust: 4.45
+Windbearing: 206
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 8 AM
+Partly Cloudy
+Its 35.75f and feels like 33.21f
+Probability of rain is 0.02 with intensity of 0.0008
+Humidity: 0.89
+Windspeed: 3.27
+Windgust: 4.67
+Windbearing: 205
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 9 AM
+Partly Cloudy
+Its 37.6f and feels like 35.28f
+Probability of rain is 0.02 with intensity of 0.0009
+Humidity: 0.85
+Windspeed: 3.31
+Windgust: 5.38
+Windbearing: 205
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 10 AM
+Partly Cloudy
+Its 39.42f and feels like 36.98f
+Probability of rain is 0.02 with intensity of 0.0008
+Humidity: 0.83
+Windspeed: 3.66
+Windgust: 6.38
+Windbearing: 204
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 11 AM
+Partly Cloudy
+Its 41.3f and feels like 38.27f
+Probability of rain is 0.02 with intensity of 0.0004
+Humidity: 0.81
+Windspeed: 4.66
+Windgust: 7.73
+Windbearing: 194
+Visibility: 10
+      ------
+Date: Monday Dec 31st at 12 PM
+Partly Cloudy
+Its 43.23f and feels like 39.62f
+Humidity: 0.79
+Windspeed: 5.99
+Windgust: 9.41
+Windbearing: 182
+Visibility: 10
+Go Maigh, the weather is, {
+    "time": 1546104201,
+    "summary": "Partly Cloudy",
+    "icon": "partly-cloudy-day",
+    "nearestStormDistance": 6,
+    "nearestStormBearing": 132,
+    "precipIntensity": 0,
+    "precipProbability": 0,
+    "temperature": 48.9,
+    "apparentTemperature": 44.1,
+    "dewPoint": 33.55,
+    "humidity": 0.55,
+    "pressure": 1016.28,
+    "windSpeed": 11.77,
+    "windGust": 16.63,
+    "windBearing": 314,
+    "cloudCover": 0.28,
+    "uvIndex": 2,
+    "visibility": 10,
+    "ozone": 264.76,
+    "date": "2018-12-29T17:23:21.000Z"
+}
