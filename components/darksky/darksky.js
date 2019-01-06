@@ -2,9 +2,10 @@
  *   Access the darksky.net API  
  */
 const dateFns = require('date-fns');
-const apiRequest = require("../apiRequest/apiRequest");
+const axios = require('axios');
+/* Local */
+const envDs = require("../../env/config.js").env.darkSky;
 
-const apiKey = "ed46ba474c621c9bb8098476390061a8";
 const baseUrl = "https://api.darksky.net/forecast";
 
 const allHourlyLabels = ["time", "summary", "icon", "precipIntensity",
@@ -29,53 +30,52 @@ const someDailyLabels = [
     "ozone",
 ];
 
-const getWeatherForecast = (location, params, callback) => {
-    if (!location.latitude || !location.longitude){
-         callback("No location for weather forecast!",null);
-    }
-    let url = baseUrl + "/" +
-        apiKey + "/" + `${location.latitude},${location.longitude}`;
-    apiRequest.callApi({
-        url,
-        json: true
-    }, (error, body) => {
-        if (error) {
-            callback(error, null);
-        } else if (!body) {
-            callback("Got nothing back from darksky!", null);
-        } else {
-            //hourlyForecast(body.hourly, someHourlyLabels);
-            let forecast = {};
-            if (params.hourly) {
-                forecast.hourly = body.hourly;
-                timeIntervalForecast(body.daily, someDailyLabels);
-            }
-
-            if (params.daily){
-               forecast.daily = body.daily;
-               timeIntervalForecast(body.daily, someDailyLabels);
-            }
-
-            if (params.summary) forecast.currently = body.currently;
-
-            callback(null, forecast);
+const getWeatherForecast = (location, params) => {
+    return new Promise((resolve, reject) => {
+        if (!location || !location.latitude || !location.longitude) {
+            throw new Error("No location for weather forecast!");
         }
+
+        let url = baseUrl + "/" + envDs.apiKey + "/" + `${location.latitude},${location.longitude}`;
+
+        axios.get(url)
+            .then(function(response) {
+                if (response.status !== 200) {
+                    throw new Error("Bad weather response, " + response.status);
+                }
+                let body = response.data;
+                //hourlyForecast(body.hourly, someHourlyLabels);
+                let forecast = {};
+                if (params.hourly) {
+                    forecast.hourly = body.hourly;
+                    timeIntervalForecast(body.daily.data, someDailyLabels);
+                }
+
+                if (params.daily) {
+                    console.log(`Summary: ${body.daily.summary}`);
+                    console.log(`Icon: ${body.daily.icon}`);
+                    forecast.daily = body.daily;
+                    timeIntervalForecast(body.daily.data, someDailyLabels);
+                }
+
+                if (params.today) {
+                    forecast.today = body.today;
+                    timeIntervalForecast(body.daily.data.slice(0,1), someDailyLabels);
+                }
+
+                if (params.summary) forecast.currently = body.currently;
+
+                resolve(forecast);
+         });
     });
 };
 
-function timeIntervalForecast(timeIntervals = {}, labels = []) {
-    let firstD = new Date(0);
-    let timezoneOffset = firstD.getTimezoneOffset();
-    const data = timeIntervals.data;
-    console.log(`Summary: ${timeIntervals.summary}`);
-    console.log(`Icon: ${timeIntervals.icon}`);
-
+function timeIntervalForecast(data = [], labels = []) {
     data.forEach((intervalRec, idx) => {
         addDateFormatToResult(intervalRec);
         displayForTimeInterval(intervalRec, labels);
     });
 }
-
 
 function uCaseFirst(str) {
     return str.substring(0, 1).toUpperCase() + str.slice(1).toLowerCase();
@@ -96,7 +96,7 @@ function displayForTimeInterval(intervalRec, labels = []) {
     }
 
     if (intervalRec.precipProbability !== 0) {
-        console.log(`Probability of ${intervalRec.precipType} is ${intervalRec.precipProbability} with intensity of ${intervalRec.precipIntensity}`);
+        console.log(`Probability of ${intervalRec.precipType} is ${intervalRec.precipProbability * 100}% with intensity of ${intervalRec.precipIntensity * 100}%`);
     }
 
     labels.forEach(label => {
@@ -169,3 +169,32 @@ function addDateFormatToResult(interval) {
 module.exports = {
     getWeatherForecast
 };
+
+/*
+    apiRequest.callApi({
+        url,
+        json: true
+    }, (error, body) => {
+        if (error) {
+            callback(error, null);
+        } else if (!body) {
+            callback("Got nothing back from darksky!", null);
+        } else {
+            //hourlyForecast(body.hourly, someHourlyLabels);
+            let forecast = {};
+            if (params.hourly) {
+                forecast.hourly = body.hourly;
+                timeIntervalForecast(body.daily, someDailyLabels);
+            }
+
+            if (params.daily){
+               forecast.daily = body.daily;
+               timeIntervalForecast(body.daily, someDailyLabels);
+            }
+
+            if (params.summary) forecast.currently = body.currently;
+
+            callback(null, forecast);
+        }
+    });
+    */
