@@ -39,7 +39,8 @@ const argv = yargs
         address,
         daily,
         hourly,
-        summary
+        summary,
+        today
     }).help().alias('help','h').argv;
 
 module.exports = {
