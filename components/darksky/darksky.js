@@ -169,32 +169,3 @@ function addDateFormatToResult(interval) {
 module.exports = {
     getWeatherForecast
 };
-
-/*
-    apiRequest.callApi({
-        url,
-        json: true
-    }, (error, body) => {
-        if (error) {
-            callback(error, null);
-        } else if (!body) {
-            callback("Got nothing back from darksky!", null);
-        } else {
-            //hourlyForecast(body.hourly, someHourlyLabels);
-            let forecast = {};
-            if (params.hourly) {
-                forecast.hourly = body.hourly;
-                timeIntervalForecast(body.daily, someDailyLabels);
-            }
-
-            if (params.daily){
-               forecast.daily = body.daily;
-               timeIntervalForecast(body.daily, someDailyLabels);
-            }
-
-            if (params.summary) forecast.currently = body.currently;
-
-            callback(null, forecast);
-        }
-    });
-    */
